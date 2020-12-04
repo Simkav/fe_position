@@ -1,0 +1,35 @@
+:root{
+  --pos-distance: 30px;
+}
+body {
+  background-color: aqua;
+  min-height: 300vh;
+}
+.left-top { 
+  background-color: limegreen;
+  padding: 20px;
+  left: var(--pos-distance);
+  top: var(--pos-distance);
+}
+.right-top {
+  background-color: purple;
+  padding: 10px;
+  right: var(--pos-distance);
+  top: var(--pos-distance);
+}
+.right-bottom {
+  background-color: yellow;
+  padding: 30px;
+  right: var(--pos-distance);
+  bottom: var(--pos-distance);
+}
+.left-bottom {
+  background-color: tomato;
+  padding: 40px;
+  left: var(--pos-distance);
+  bottom: var(--pos-distance);
+}
+.fixed-pos{
+  border: 5px solid black;
+  position: fixed;
+}
