@@ -1,35 +1,55 @@
-:root{
-  --pos-distance: 30px;
+* {
+  box-sizing: border-box;
 }
 body {
-  background-color: aqua;
-  min-height: 300vh;
+  margin: 0;
+  font-family: sans-serif;
 }
-.left-top { 
-  background-color: limegreen;
-  padding: 20px;
-  left: var(--pos-distance);
-  top: var(--pos-distance);
+ul {
+  list-style: none;
+  padding: 0;
 }
-.right-top {
-  background-color: purple;
-  padding: 10px;
-  right: var(--pos-distance);
-  top: var(--pos-distance);
+a {
+  text-decoration: none;
+  color: inherit;
 }
-.right-bottom {
-  background-color: yellow;
-  padding: 30px;
-  right: var(--pos-distance);
-  bottom: var(--pos-distance);
+.nav-list {
+  font-size: 0;
+  margin-left: 40px;
+  margin-top: 20px;
 }
-.left-bottom {
-  background-color: tomato;
-  padding: 40px;
-  left: var(--pos-distance);
-  bottom: var(--pos-distance);
+.list-item {
+  display: inline-block;
+  position: relative;
+  border: 1px solid #3c805b;
+  background-color: #47986d;
+  color: black;
+  font-size: 16px;
 }
-.fixed-pos{
-  border: 5px solid black;
-  position: fixed;
+.link {
+  width: 100%;
+  padding: 10px 30px;
+  display: inline-block;
+  text-align: center;
+  text-transform: capitalize;
+}
+.sub-nav-list {
+  position: absolute;
+  display: none;
+  left: 0;
+  right: 0;
+}
+.sub-nav-item {
+  display: block;
+}
+.list-item:hover {
+  background-color: #3c805b;
+}
+.list-item:hover > .sub-nav-list {
+  display: block;
+}
+.extended-sub-nav-list {
+  top: 0%;
+  left: 100%;
+  width: 100%;
 }
